@@ -6,8 +6,8 @@
 
 Final Project tentang Monitoring Server Grafana (Prometheus, promtail , loki), SSH Notification, 
 
-## Instalasi Prometheus
-# Prometheus digunakan untuk mengumpulkan data dan pemantauan. Pengumpulan Matrix, Antarmuka terbuka untuk menganalisi Query, dan Timeseries Monitoring. Disini Prometheus digunakan untuk kebutuhan Node Exporter dan Grafana
+# Instalasi Prometheus
+## Prometheus digunakan untuk mengumpulkan data dan pemantauan. Pengumpulan Matrix, Antarmuka terbuka untuk menganalisi Query, dan Timeseries Monitoring. Disini Prometheus digunakan untuk kebutuhan Node Exporter dan Grafana
 
   # Pastikan sudah masuk root
 1. Mengakses Web Resmi Prometheus dan mengambil sesuai versi Ubuntu 20.04 https://prometheus.io/download/
@@ -99,8 +99,8 @@ Final Project tentang Monitoring Server Grafana (Prometheus, promtail , loki), S
 13. Pastikan dapat diakses pada web browser
 
 
-## Instalasi node-exporter
-# Node-exporter berupa machine matrix untuk menyediakan data matrix untuk pemantauan dan analisis.
+# Instalasi node-exporter
+## Node-exporter berupa machine matrix untuk menyediakan data matrix untuk pemantauan dan analisis.
 
 1. Mengakses Web Resmi Prometheus dan mengambil sesuai versi Ubuntu 20.04 https://prometheus.io/download/ dan pilih node exporter
    ```bash
