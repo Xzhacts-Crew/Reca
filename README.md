@@ -4,10 +4,12 @@
   2. Muzakir M Nur							( 22.83.0883 )
   3. Gibran Hait Sami						( 22.83.0831 )
 
-Final Project tentang Monitoring Server (Grafana), SSH Notification, 
+Final Project tentang Monitoring Server Grafana (Prometheus, Promptail, Loki), SSH Notification, 
 
-## Installation For Node Exporter
+## Instalasi Prometheus
+# Prometheus digunakan untuk mengumpulkan data dan pemantauan. Pengumpulan Matrix, Antarmuka terbuka untuk menganalisi Query. Disini Prometheus digunakan untuk kebutuhan Node Exporter dan Grafana
 
+1. Mengakses Web Resmi Prometheus dan mengambil sesuai versi Ubuntu 20.04
 ```bash
-i
+wget 
 ```
