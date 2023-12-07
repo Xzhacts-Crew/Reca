@@ -11,9 +11,9 @@ Final Project tentang Monitoring Server Grafana (Prometheus, promtail , loki), S
 
   - Pastikan sudah masuk root
 1. Mengakses Web Resmi Prometheus dan mengambil sesuai versi Ubuntu 20.04 https://prometheus.io/download/
-  ```bash
-  wget https://github.com/prometheus/prometheus/releases/download/v2.48.0/prometheus-2.48.0.linux-amd64.tar.gz
-  ```
+   ```bash
+   wget https://github.com/prometheus/prometheus/releases/download/v2.48.0/prometheus-2.48.0.linux-amd64.tar.gz
+   ```
 
 2. Ekstrak prometheus tersebut dan masuk folder hasil ekstrak tersebut
    ```bash
