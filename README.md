@@ -110,5 +110,8 @@ Final Project tentang Monitoring Server Grafana (Prometheus, promtail , loki), S
 
 2. ss
 
+# Instalasi Grafana
+## Grafana adalah analitik sumber terbuka multi-platform dan aplikasi web visualisasi interaktif. Ini menyediakan bagan, grafik, dan peringatan untuk web saat terhubung ke sumber data yang didukung.
+
    
    
