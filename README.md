@@ -183,7 +183,51 @@ Final Project tentang Monitoring Server Grafana (Prometheus, promtail , loki), S
 # Instalasi Grafana
 ## Grafana adalah analitik sumber terbuka multi-platform dan aplikasi web visualisasi interaktif. Ini menyediakan bagan, grafik, dan peringatan untuk web saat terhubung ke sumber data yang didukung.
 
-1. 
+1. Install Transport https
+```bash
+  sudo apt-get install -y apt-transport-https software-properties-common wget
+  ```
+
+2. Import kunci GPG
+ ```bash
+  sudo mkdir -p /etc/apt/keyrings/
+  wget -q -O - https://apt.grafana.com/gpg.key | gpg --dearmor | sudo tee /etc/apt/keyrings/grafana.gpg > /dev/null
+  ```
+
+3. Penambahan repository
+```bash
+  echo "deb [signed-by=/etc/apt/keyrings/grafana.gpg] https://apt.grafana.com stable main" | sudo tee -a   /etc/apt/sources.list.d/grafana.list
+
+echo "deb [signed-by=/etc/apt/keyrings/grafana.gpg] https://apt.grafana.com beta main" | sudo tee -a /etc/apt/sources.list.d/grafana.list
+  ```
+
+4. Lakukan apt update di karenakan kita telah menambahkan repository
+```bash
+   apt update
+  ```
+5. Install GRAFANA
+```bash
+  sudo apt-get install grafana
+  ```
+
+6. jalankan grafana , dan periksa status grafana pastikan activ
+```bash
+  systemctl enable --now grafana-server.service
+  systemctl status --now grafana-server.service
+  ```
+
+7. izinkan port grafana 3000
+```bash
+  ufw allow 3000
+  ufw allow 3000/tcp
+  ```
+8. izinkan port grafana 3000
+```bash
+  ufw allow 3000
+  ufw allow 3000/tcp
+  ```
+
+
 
    
    
