@@ -227,6 +227,13 @@ echo "deb [signed-by=/etc/apt/keyrings/grafana.gpg] https://apt.grafana.com beta
   ufw allow 3000/tcp
   ```
 
+8. jalankan pada web dengan https://ipadd:3000
+  login menggunakan default , username ADMIN , password ADMIN
+
+9. tampilan gravana setelah terhubung dengan prometheus
+![image](https://github.com/Xzhacts-Crew/Reca/assets/147706295/0603434a-5b90-4f3a-b3e2-8603e8a47958)
+
+
 
 
    
