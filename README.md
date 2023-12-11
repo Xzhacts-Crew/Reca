@@ -106,9 +106,10 @@ Final Project tentang Monitoring Server Grafana (Prometheus, promtail , loki), S
 1. Mengakses Web Resmi Prometheus dan mengambil sesuai versi Ubuntu 20.04 https://prometheus.io/download/ dan pilih node exporter
    ```bash
    wget https://github.com/prometheus/node_exporter/releases/download/v1.7.0/node_exporter-1.7.0.linux-amd64.tar.gz
-   ``` tar xvf node_exporter-1.7.0.linux-amd64.tar.gz
+   tar xvf node_exporter-1.7.0.linux-amd64.tar.gz
+   ```
 
-2. ss
+3. ss
 
 # Instalasi Grafana
 ## Grafana adalah analitik sumber terbuka multi-platform dan aplikasi web visualisasi interaktif. Ini menyediakan bagan, grafik, dan peringatan untuk web saat terhubung ke sumber data yang didukung.
