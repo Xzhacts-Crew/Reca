@@ -106,10 +106,80 @@ Final Project tentang Monitoring Server Grafana (Prometheus, promtail , loki), S
 1. Mengakses Web Resmi Prometheus dan mengambil sesuai versi Ubuntu 20.04 https://prometheus.io/download/ dan pilih node exporter
    ```bash
    wget https://github.com/prometheus/node_exporter/releases/download/v1.7.0/node_exporter-1.7.0.linux-amd64.tar.gz
-   tar xvf node_exporter-1.7.0.linux-amd64.tar.gz
    ```
 
-3. ss
+2. Extract file node exportedan masuk ke node ecporter untuk konfigurasi
+   ```bash
+   tar xvf node_exporter-1.7.0.linux-amd64.tar.gz
+   cd node_exporter-1.7.0.linux-amd64
+   ```
+
+3. Pindahkan file Node exporter pada /usr/local/bin
+   ```bash
+   mv node_exporter /usr/local/bin/
+   ```
+   
+4. Buat Konfigurasi daemon service untuk Node exporter, agar bisa berjalan di background proses
+    ```bash
+   nano /etc/systemd/system/node-exporter.service
+   ```
+
+5. Konfigurasi service seperti ini
+    ```bash
+   nano /etc/systemd/system/node-exporter.service
+   [Unit]
+    Description=Prometheus exporter for machine metrics
+
+    [Service]
+    Restart=always
+    User=prometheus
+    ExecStart=/usr/local/bin/node_exporter
+    ExecReload=/bin/kill -HUP $MAINPID
+    TimeoutStopSec=20s
+    SendSIGKILL=no
+
+    [Install]
+    WantedBy=multi-user.target
+   ```
+    
+6.  Lakukan reload daemon ,enable node exporter, kemudain cek status node_exporter
+   ```bash
+   Sytemctl daemon-reload
+   systemctl enable --now node-exporter.service
+   systemctl status node-exporter.service
+   ```
+
+7. Cek port untuk mengakses node exporter
+    ```bash
+     lsof -n -i | grep node
+   ```
+
+8.Menambahkan port node exporter pada nano /etc/prometheus.yml
+  ```bash
+       - job_name: "node-exporter"
+    static_configs:
+      - targets: ["localhost:9100"]
+  ```
+
+8.Restart prometheus, dan pastikan status prometheus masih active
+  ```bash
+  systemctl restart prometheus
+  systemctl status prometheus
+  ```
+
+9.buat perizinan untuk port node yaitu 9100 , dan coba running pada web
+```bash
+  ufw allow 9100
+  ufw allow 9100/tcp
+![image](https://github.com/Xzhacts-Crew/Reca/assets/147706295/8864e20e-d212-4ee7-b24e-7ec06e3b40e7)
+
+  ```
+   
+   
+   
+
+
+  
 
 # Instalasi Grafana
 ## Grafana adalah analitik sumber terbuka multi-platform dan aplikasi web visualisasi interaktif. Ini menyediakan bagan, grafik, dan peringatan untuk web saat terhubung ke sumber data yang didukung.
