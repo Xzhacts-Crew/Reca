@@ -171,8 +171,8 @@ Final Project tentang Monitoring Server Grafana (Prometheus, promtail , loki), S
 ```bash
   ufw allow 9100
   ufw allow 9100/tcp
-![all_text](https://github.com/Xzhacts-Crew/Reca/assets/147706295/8864e20e-d212-4ee7-b24e-7ec06e3b40e7raw=true)
   ```
+![image](https://github.com/Xzhacts-Crew/Reca/assets/147706295/228a2118-48df-4d35-9448-c866688114f9)
    
    
    
