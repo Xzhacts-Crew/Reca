@@ -7,7 +7,7 @@
 Final Project tentang Monitoring Server Grafana (Prometheus, promtail , loki), SSH Notification, 
 
 # Instalasi Prometheus
-### Prometheus digunakan untuk mengumpulkan data dan pemantauan. Pengumpulan Matrix, Antarmuka terbuka untuk menganalisi Query, dan Timeseries Monitoring. Disini Prometheus digunakan untuk kebutuhan Node Exporter dan Grafana
+#### Prometheus digunakan untuk mengumpulkan data dan pemantauan. Pengumpulan Matrix, Antarmuka terbuka untuk menganalisi Query, dan Timeseries Monitoring. Disini Prometheus digunakan untuk kebutuhan Node Exporter dan Grafana
 
 
 ---Pastikan sudah masuk root
