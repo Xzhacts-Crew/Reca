@@ -100,7 +100,7 @@ Final Project tentang Monitoring Server Grafana (Prometheus, node_exporter), SSH
 13. Pastikan dapat diakses pada web browser
 
 # Instalasi node-exporter
-## Node-exporter berupa machine matrix untuk menyediakan data matrix untuk pemantauan dan analisis.
+#### Node-exporter berupa machine matrix untuk menyediakan data matrix untuk pemantauan dan analisis.
 
 1. Mengakses Web Resmi Prometheus dan mengambil sesuai versi Ubuntu 20.04 https://prometheus.io/download/ dan pilih node exporter
    ```bash
@@ -174,7 +174,7 @@ Final Project tentang Monitoring Server Grafana (Prometheus, node_exporter), SSH
 ![image](https://github.com/Xzhacts-Crew/Reca/assets/147706295/228a2118-48df-4d35-9448-c866688114f9)
    
 # Instalasi Grafana
-## Grafana adalah analitik sumber terbuka multi-platform dan aplikasi web visualisasi interaktif. Ini menyediakan bagan, grafik, dan peringatan untuk web saat terhubung ke sumber data yang didukung.
+#### Grafana adalah analitik sumber terbuka multi-platform dan aplikasi web visualisasi interaktif. Ini menyediakan bagan, grafik, dan peringatan untuk web saat terhubung ke sumber data yang didukung.
 
 1. Install Transport https
 ```bash
