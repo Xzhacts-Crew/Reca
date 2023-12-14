@@ -229,10 +229,32 @@ echo "deb [signed-by=/etc/apt/keyrings/grafana.gpg] https://apt.grafana.com beta
 
 # SSH Notification Bot-Telegram
 
-1. Menginstall requirement untuk menjalankan Notification Botnya
+1. Menginstall python3 dengan minimal version 3.9 untuk menjalankan Notification Botnya
    ```bash
    apt install python3
    ```
+
+2. Menginstall requirements yang dibutuhkan dalam python
+   ```bash
+   pip install python-telegram-bot
+   pip install datetime
+   pip install asyncio
+   pip install time
+   pip install requests
+   ```
+
+3. Membuat direktori dan file baru seperti dibawah ini pada /etc/notifssh
+   ```bash
+   mkdir /etc/notifssh/
+   touch notif_ssh.py
+   ```
+
+4. Mengizinkan hak akeses untuk direktori dan isinya dengan 777.
+   ```bash
+   chmod -R 777 /etc/notifssh
+   ```
+
+5. Memberikan script pada notifssh.py sesuai dibawah ini
    
 
 
