@@ -259,7 +259,7 @@ echo "deb [signed-by=/etc/apt/keyrings/grafana.gpg] https://apt.grafana.com beta
 # Instalasi Snort
 Snort adalah sebuah sistem deteksi intrusi (Intrusion Detection System, IDS) yang digunakan untuk mengamati dan mendeteksi aktivitas yang mencurigakan atau potensial serangan
 
-1.update
+1. Update
 ````bash
 sudo apt update
 ````
