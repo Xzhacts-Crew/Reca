@@ -259,36 +259,36 @@ echo "deb [signed-by=/etc/apt/keyrings/grafana.gpg] https://apt.grafana.com beta
 # Instalasi Snort
 Snort adalah sebuah sistem deteksi intrusi (Intrusion Detection System, IDS) yang digunakan untuk mengamati dan mendeteksi aktivitas yang mencurigakan atau potensial serangan
 1. update
-   ``bash
-   sudo apt update
-   ``bash
+``bash
+sudo apt update
+``bash
 2. siapkan aplikasi pendukung
-   ``bash
-   sudo locale-gen id ID.UTF-8
-   ``bash
+``bash
+ sudo locale-gen id ID.UTF-8
+``bash
 3. install snort
-   ``bash
-   apt -y install oinkmaster snort snort-common snort-rules-default snort-doc
-   ``bash
+``bash
+ apt -y install oinkmaster snort snort-common snort-rules-default snort-doc
+``bash
 4. cek snort
-   ``bash
-   snort -C
-   ``bash
+``bash
+snort -C
+``bash
 5. jalankan snort
-   ``bash
-   sudo /usr/sbin/snort -A fast -b -l /var/log/snort/ -u username -c /etc/snort/snort.conf -i enp0s3 -q -D -S HOME_NET=[ip] -i enp0s3 &
-   ``bash
+``bash
+sudo /usr/sbin/snort -A fast -b -l /var/log/snort/ -u username -c /etc/snort/snort.conf -i enp0s3 -q -D -S HOME_NET=[ip] -i enp0s3 &
+``bash
 6. beri perizinan
-   ``bash
-   sudo chown -R user:user /var/log/snort/
-   ``bash
-   ``bash
-   sudo chmod -R 775 /var/log/snort/
-   ``bash
+``bash
+sudo chown -R user:user /var/log/snort/
+``bash
+``bash
+ sudo chmod -R 775 /var/log/snort/
+``bash
 7. Matikan snort
-   ``bash
-   killall snort
-   ``bash
+``bash
+killall snort
+``bash
 
 
 
