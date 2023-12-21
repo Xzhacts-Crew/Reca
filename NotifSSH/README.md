@@ -21,7 +21,7 @@
      ```
   3. Download NotifSSH github
      ```bash
-     git clone https://github.com/Xzhacts-Crew/Reca/NotifSSH.git
+     git clone https://github.com/Xzhacts-Crew/Reca.git
      cd Reca
      ```
 
