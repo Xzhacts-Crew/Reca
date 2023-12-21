@@ -255,8 +255,8 @@ echo "deb [signed-by=/etc/apt/keyrings/grafana.gpg] https://apt.grafana.com beta
    ```
 
 5. Memberikan script pada notifssh.py sesuai dibawah ini
-   ```python
-   import time
+```python
+import time
 from datetime import datetime
 import requests
 from telegram import Bot
@@ -325,7 +325,7 @@ if __name__ == "__main__":
 
     import asyncio
     asyncio.run(monitor_ssh_log())
-    ```
+```
     
 
 
