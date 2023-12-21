@@ -22,6 +22,7 @@
   3. Download NotifSSH github
      ```bash
      git clone https://github.com/Xzhacts-Crew/Reca/NotifSSH.git
+     cd Reca
      ```
 
   4. Izinkan terlebih dahulu folder tersebut
