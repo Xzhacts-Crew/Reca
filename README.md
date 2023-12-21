@@ -328,6 +328,7 @@ if __name__ == "__main__":
 ```
   6. Membuat file baru untuk service notifssh agar terus berjalan pada latar belakang
      ```bash
+     cd /etc/systemd/system/
      touch notifssh.service
      ```
 
