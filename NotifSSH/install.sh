@@ -12,7 +12,7 @@ fi
 
 # Menyalin notifssh.py ke direktori target
 echo "Copying notifssh.py to $install_dir"
-cp notifssh.py "$install_dir/"
+cp notif_ssh.py "$install_dir/"
 
 # Menyalin notifssh.service ke direktori systemd
 echo "Copying notifssh.service to $systemd_dir"
