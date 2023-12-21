@@ -6,7 +6,11 @@
 
   2. Install package python yang dibutuhkan
      ```bash
-     pip install python-telegram-bot datetime asyncio time requests
+     pip install python-telegram-bot
+     pip install datetime
+     pip install asyncio
+     pip install time
+     pip install requests
      ```
 
 ### Langkah Installasi
