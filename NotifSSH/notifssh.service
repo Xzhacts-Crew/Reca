@@ -1,0 +1,11 @@
+[Unit]
+Description=NotifSSH
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 /etc/notifssh/notif_ssh.py
+WorkingDirectory=/etc/notifssh/
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
