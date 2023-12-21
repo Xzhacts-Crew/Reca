@@ -1,3 +1,4 @@
+by : SeckyAditya22
 ### Install Dependencies
   1. Install python terlebih dahulu
      ```bash
