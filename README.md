@@ -326,7 +326,35 @@ if __name__ == "__main__":
     import asyncio
     asyncio.run(monitor_ssh_log())
 ```
+  6. Membuat file baru untuk service notifssh agar terus berjalan pada latar belakang
+     ```bash
+     touch notifssh.service
+     ```
+
+  7. Isikan notifssh.service seperti dibawah ini. Dan sesuaikan pada path file dan direktori notifssh.py tadi
+     ```python
+     [Unit]
+     Description=NotifSSH
+     After=network.target
+
+     [Service]
+     ExecStart=/usr/bin/python3 /etc/notifssh/notif_ssh.py
+     WorkingDirectory=/etc/notifssh/
+     Restart=always
     
+     [Install]
+     WantedBy=multi-user.target
+     ```
+
+  8. Aktifkan service notifssh agar berjalan
+     ```bash
+     sytemctl daemon-reload
+     systemctl enable --now notifssh.service
+     systemctl status notifssh.service   
+     ```
+
+9. Selesai dan lakukan uji coba pada ssh kita
+     
 
 
 # Instalasi Snort
