@@ -382,15 +382,11 @@ snort -C
   ```
 5. jalankan snort
   ```bash
-  snort -dev -l /var/log/snort/ -h  172.26.249.129/20 -c /etc/snort/snort.conf &
-  ```
-
-  ```bash
   sudo /usr/sbin/snort -A fast -b -l /var/log/snort/ -u username -c /etc/snort/snort.conf -i enp0s3 -q -D -S HOME_NET=[ip] -i enp0s3 &
   ```
 6. beri perizinan
   ```bash
-sudo chown -R user:user /var/log/snort/
+  sudo chown -R user:user /var/log/snort/
   ```
   ```
  sudo chmod -R 775 /var/log/snort/
