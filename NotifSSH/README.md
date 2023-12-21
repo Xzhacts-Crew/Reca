@@ -12,6 +12,10 @@
      pip install time
      pip install requests
      ```
+     Atau dapat juga dengan seperti dibawah (kadang error jadi rekomendasi yang atas)
+     ```bash
+     pip install python-telegram-bot datetime asyncio requests
+     ```
 
 ### Langkah Installasi
 
