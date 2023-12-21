@@ -6,10 +6,10 @@ import asyncio
 import subprocess
 
 # UNTUK TOKEN BOT CUY
-TELEGRAM_BOT_TOKEN = "6883307086:AAFK9zMkzqWbPzpZqGdoOmSkWGL4GSy5w_E"
+TELEGRAM_BOT_TOKEN = ""
 
 # CHAT ID TELEGRAM CUY
-TELEGRAM_CHAT_ID = "-1002043620520"
+TELEGRAM_CHAT_ID = ""
 
 # LOG
 KEYWORDS = ["Accepted password"]
@@ -18,7 +18,7 @@ KEYWORDS = ["Accepted password"]
 LOG_FILE = "/var/log/auth.log"
 
 # API IP GEOLOCATION
-IPGEO_API_KEY = "6756e20a64114660b41bf1236d9e714b"  # Ganti dengan API key Anda
+IPGEO_API_KEY = ""  # Ganti dengan API key Anda
 IPGEO_URL = f"https://api.ipgeolocation.io/ipgeo?apiKey={IPGEO_API_KEY}"
 
 async def send_telegram_message(message):
