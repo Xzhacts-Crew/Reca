@@ -4,7 +4,7 @@
   -  Muzakir M Nur							( 22.83.0883 )
   - Gibran Hait Sami						( 22.83.0831 )
 
-Final Project tentang Monitoring Server Grafana (Prometheus, node_exporter), SSH Notification, 
+Final Project tentang Monitoring Server Grafana (Prometheus, node_exporter), SSH Notification, Snort
 
 # Instalasi Prometheus
 #### Prometheus digunakan untuk mengumpulkan data dan pemantauan. Pengumpulan Matrix, Antarmuka terbuka untuk menganalisi Query, dan Timeseries Monitoring. Disini Prometheus digunakan untuk kebutuhan Node Exporter dan Grafana
