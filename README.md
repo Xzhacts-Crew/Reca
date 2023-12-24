@@ -4,7 +4,7 @@
   -  Muzakir M Nur							( 22.83.0883 )
   - Gibran Hait Sami						( 22.83.0831 )
 
-Final Project tentang Monitoring Server Grafana (Prometheus, node_exporter), SSH Notification, Snort
+Final Project tentang Monitoring Server Grafana (Prometheus, node_exporter), SSH Notification, Snort, IP_Block
 
 # Instalasi Prometheus
 #### Prometheus digunakan untuk mengumpulkan data dan pemantauan. Pengumpulan Matrix, Antarmuka terbuka untuk menganalisi Query, dan Timeseries Monitoring. Disini Prometheus digunakan untuk kebutuhan Node Exporter dan Grafana
@@ -395,6 +395,27 @@ snort -C
   ```bash
   killall snort
   ```
+
+### IP_BLOCK Brute Force SSH
+
+  1. Install terlebih dahulu pada folder IP_Block dan masuk User root
+     ```bash
+     sudo su
+     cd
+     git clone https://github.com/Xzhacts-Crew/Reca.git
+     ```
+
+  2. Masuk pada direktori Reca
+     ```bash
+     cd Reca
+     ```
+
+  3. Mengizinkan direktorinya
+     ```bash
+     chmod -R 777
+     ```
+
+  4. 
 
 
 
