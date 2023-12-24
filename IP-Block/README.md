@@ -26,4 +26,10 @@
      ./install.sh
      ```
 
-  5. Selesai dan uji coba
+  5. Jalankan ip-block dan lihat status
+     ```bash
+     systemctl start ip_block.service
+     systemctl status ip_block.service
+     ```
+
+  6. Done
