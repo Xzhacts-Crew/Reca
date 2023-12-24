@@ -410,12 +410,20 @@ snort -C
      cd Reca
      ```
 
-  3. Mengizinkan direktorinya
+  3. Mengizinkan direktorinya dan masuk IP-Block
      ```bash
-     chmod -R 777
+     chmod -R 777 IP-Block
+     cd IP-Block
      ```
 
-  4. 
+  4. Jalankan Instalasinya
+     ```bash
+     chmod +x install.sh
+     ./install.sh
+     ```
+
+  5. Selesai dan uji coba
+     
 
 
 
