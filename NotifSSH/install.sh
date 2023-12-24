@@ -22,4 +22,6 @@ cp notifssh.service "$systemd_dir/"
 systemctl daemon-reload
 
 echo "Installation complete. You can start the service using:"
+echo "Jangan lupa"
+echo "systemctl enable --now notifssh.service"
 echo "sudo systemctl start notifssh.service"
