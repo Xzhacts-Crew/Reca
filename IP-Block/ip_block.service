@@ -1,0 +1,11 @@
+[Unit]
+Description=IP Block By Kelompok OPM
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 /etc/ip_block/ip_block.py
+Restart=always
+RestartSec=60
+
+[Install]
+WantedBy=multi-user.target
